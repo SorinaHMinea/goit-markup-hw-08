@@ -1,0 +1,18 @@
+$link-color: #2196f3;
+$text-color: #ffffff;
+$heading-color: #212121;
+$alternative-color: #2f303a;
+$text-font-family: "Roboto", sans-serif;
+$logo-font-family: "Raleway", sans-serif;
+$tablet-breakpoint: 481px;
+$desktop-breakpoint: 769px;
+:root {
+  --tablet-breakpoint: #{$tablet-breakpoint};
+  --desktop-breakpoint: #{$desktop-breakpoint};
+  --link-color: #{$link-color};
+  --text-color: #{$text-color};
+  --heading-color: #{$heading-color};
+  --alternative-color: #{$alternative-color};
+  --text-font-family: #{$text-font-family};
+  --logo-font-family: #{$logo-font-family};
+}

@@ -1,0 +1,247 @@
+.section.section-advantages {
+  padding-bottom: 0;
+}
+
+.symbol-list {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+  width: 450px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  gap: 30px;
+
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 0;
+    width: 0;
+    height: 0;
+    background: #f5f4fa;
+    border-radius: 4px;
+    gap: 30px;
+    margin-left: 20px;
+  }
+
+  &__symbol {
+    display: flex;
+    transform: scale(0.6);
+    margin-top: -20px;
+    color: #212121;
+    margin-left: 70px;
+  }
+  .symbol-antena {
+    transform: scale(0.5);
+    margin-top: -15px;
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+    gap: 136px;
+    margin-bottom: 166px;
+  }
+}
+.advantages {
+  padding-left: 22px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  &__item {
+    padding-bottom: 123px;
+  }
+  &__item--title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .section.section-advantages {
+    padding-bottom: 0;
+  }
+
+  .symbol-list {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 0;
+    width: 354px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    gap: 30px;
+
+    &__ul {
+      display: flex;
+      flex-direction: row;
+      padding-inline-start: 0;
+      width: 0;
+      height: 0;
+      background: #f5f4fa;
+      border-radius: 4px;
+      gap: 30px;
+      margin-left: 20px;
+    }
+
+    &__symbol {
+      display: flex;
+      transform: scale(0.6);
+
+      color: #212121;
+      margin-left: 30px;
+    }
+    .symbol-antena {
+      transform: scale(0.5);
+      margin-top: -15px;
+    }
+
+    &__flex {
+      display: flex;
+      flex-direction: column;
+      margin-top: -50px;
+      gap: 160px;
+      margin-bottom: 0;
+    }
+  }
+
+  use:hover {
+    color: #2196f3;
+    cursor: pointer;
+  }
+
+  .advantages {
+    display: flex;
+    gap: 90px;
+    margin-top: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &_flex {
+      display: flex;
+
+      flex-direction: column;
+      margin-top: 53px;
+      padding-bottom: 0;
+    }
+
+    &__item {
+      margin-right: 30px;
+
+      &--title {
+        font-family: $text-font-family {
+          style: normal;
+          weight: 700;
+          size: 14px;
+        }
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        width: 270px;
+        height: 16px;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      &__item--text {
+        font-family: $text-font-family {
+          style: normal;
+          weight: 400;
+          size: 14px;
+        }
+        letter-spacing: 0.03em;
+        width: 354px;
+        height: 75px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .section.section-advantages {
+    padding-bottom: 0;
+  }
+
+  .symbol-list {
+    width: 270px;
+    height: 120px;
+    &__flex {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+    &__ul {
+      height: 60px;
+      background: #f5f4fa;
+      border-radius: 4px;
+      gap: 30px;
+      margin-left: 20px;
+    }
+
+    &__symbol {
+      display: flex;
+      transform: scale(0.6);
+      margin-left: 0;
+      color: #212121;
+      margin-bottom: 0;
+    }
+  }
+
+  use:hover {
+    color: #2196f3;
+    cursor: pointer;
+  }
+
+  .advantages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    margin-left: 30px;
+    gap: 30px;
+    margin-top: 50px;
+    padding-left: 0px;
+    &_flex {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      margin-top: 0;
+    }
+    &__item {
+      width: 270px;
+      height: 120px;
+      margin: 0;
+      margin-top: -30px;
+
+      &--title {
+        font-family: $text-font-family {
+          style: normal;
+          weight: 700;
+          size: 14px;
+        }
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      &__item--text {
+        font-family: $text-font-family {
+          style: normal;
+          weight: 300;
+          size: 14px;
+        }
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        width: 450px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+// ADVANTAGES //

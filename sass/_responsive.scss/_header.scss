@@ -1,0 +1,236 @@
+// Header //
+
+.logo {
+  color: var(--heading-color);
+  font-family: $logo-font-family;
+  font-weight: 700;
+  font-size: 24px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+}
+.logo-span {
+  color: #0a8bf5;
+}
+
+.header {
+  position: relative;
+  height: 60px;
+}
+
+.navigation {
+  display: none;
+  &.is-open {
+    z-index: 999;
+    position: fixed;
+    height: 796px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    .navigation__links {
+      font-size: 40px;
+      margin-bottom: 306px;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+      & li {
+        margin-bottom: 32px;
+      }
+      &:hover {
+        color: #0a8bf5;
+      }
+    }
+    .header-svg {
+      display: none;
+    }
+    .navigation__contact {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 32px;
+      & a {
+        color: #757575;
+      }
+    }
+    .mobile-tel {
+      font-size: 34px;
+    }
+    .mobile-mail {
+      font-size: 24px;
+    }
+    .nav-links {
+      margin-top: 64px;
+      display: flex;
+      gap: 10px;
+    }
+    & a:active {
+      color: #0a8bf5;
+    }
+    .button--close-menu {
+      font-size: 30px;
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 20px;
+      right: 40px;
+    }
+  }
+  .menu-container.is-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+button {
+  width: 35px;
+  height: 25px;
+  border: none;
+  padding: 0;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 22px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+// / HEADER   //
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .logo {
+    font-size: 24px;
+    position: absolute;
+    top: 29px;
+    left: 15px;
+    margin-right: 0;
+  }
+
+  .header {
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #ececec;
+    height: 80px;
+
+    &-svg {
+      display: flex;
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+      margin-top: 6px;
+    }
+  }
+  .nav-border {
+    border-bottom: 3px solid #0a8bf5;
+    border-radius: 2px;
+    padding-bottom: 27px;
+  }
+  .navigation {
+    display: flex;
+    & a:hover {
+      color: #0a8bf5;
+    }
+
+    &__links {
+      display: flex;
+      margin-left: 225px;
+      font-weight: 500;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      padding-inline-start: 0;
+
+      & li {
+        margin-right: 50px;
+      }
+    }
+
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      margin-top: 17px;
+      margin-bottom: 32px;
+      padding-inline-start: 0;
+      margin-left: 40px;
+
+      li {
+        display: flex;
+      }
+
+      &--telephone {
+        font-family: $text-font-family {
+          style: normal;
+          weight: 500;
+          size: 14px;
+        }
+        color: #757575;
+        display: flex;
+        flex-direction: row-reverse;
+        white-space: nowrap;
+      }
+
+      &--mail {
+        @extend .navigation__contact--telephone;
+        margin-right: 40px;
+      }
+    }
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .button--close-menu {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+@media screen and (min-width: $desktop-breakpoint) {
+  .logo {
+    position: absolute;
+    top: 27px;
+    left: 200px;
+    margin: 0;
+  }
+  .navigation__links {
+    margin-left: 320px;
+    margin-top: 30px;
+    margin-right: 100px;
+    & li {
+      margin-right: 40px;
+    }
+  }
+  .navigation__contact {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 60px;
+  }
+  .nav-border {
+    border-bottom: 3px solid #0a8bf5;
+    border-radius: 2px;
+    padding-bottom: 27px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .button--close-menu {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+}
