@@ -9,6 +9,10 @@
 }
 @media screen and (min-width: $desktop-breakpoint) {
   // WORK //
+
+  .work-title {
+    margin-left: 155px;
+  }
   .work__section {
     display: flex;
     flex-direction: column;
@@ -27,7 +31,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    padding-left: 30px;
+    margin-left: -10px;
 
     & li {
       margin-right: 30px;

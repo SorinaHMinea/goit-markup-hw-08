@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding-left: 25px;
+  margin-left: 27px;
 
   .customers__svg {
     width: 210px;
@@ -30,6 +30,7 @@
     gap: 30px;
     width: 768px;
     padding-left: 15px;
+    margin-left: 0;
 
     .customers__svg {
       width: 226px;
@@ -53,7 +54,11 @@
     flex-wrap: nowrap;
     gap: 30px;
     height: 94px;
+    margin-left: 0px;
 
+    .section__title {
+      margin-left: 200px;
+    }
     .customers__svg {
       width: 170px;
       padding: 16px 32px;

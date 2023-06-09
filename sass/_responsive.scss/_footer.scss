@@ -455,7 +455,7 @@
     background-color: $alternative-color;
     position: relative;
     height: 251px;
-    width: 1400px;
+    width: 1200px;
     &__divide {
       display: flex;
       position: relative;
@@ -554,7 +554,7 @@
       flex-direction: column;
       margin-top: 75px;
       margin-left: 94px;
-      left: 350px;
+      left: 232px;
     }
 
     .right-footer {
@@ -583,7 +583,7 @@
       color: #ffffff;
       white-space: nowrap;
       position: absolute;
-      left: -141px;
+      left: -255px;
       bottom: 58px;
     }
 
@@ -605,8 +605,8 @@
         width: 20px;
         height: 20px;
         z-index: 999;
-        bottom: 35px;
-        left: 369px;
+        bottom: 37px;
+        left: 251px;
       }
 
       &__btn {
@@ -620,7 +620,7 @@
         margin-left: 12px;
         padding-inline-start: 0;
         bottom: 23px;
-        left: 210px;
+        left: 92px;
       }
 
       &--button {
@@ -649,7 +649,7 @@
 
     .form-footer__input {
       position: absolute;
-      left: -146px;
+      left: -266px;
       top: -72px;
       display: flex;
       background: $alternative-color;
