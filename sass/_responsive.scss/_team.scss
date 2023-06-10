@@ -1,8 +1,10 @@
 .section.team {
   padding-top: 0;
+  display: flex;
+  justify-content: center;
   background-color: #f5f4fa;
-  width: 480px;
-  height: 2761px;
+  width: 100vw;
+  height: auto;
   padding-bottom: 0;
 }
 .section__title {
@@ -11,18 +13,19 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  padding-left: 57px;
+  padding-left: 0;
   &__pictures {
     width: 354px;
-    height: 350px;
+    height: 320px;
   }
   &__card {
     background-color: white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-right: 30px;
+    justify-content: center;
     margin-bottom: 94px;
     width: 354px;
     height: 536px;
@@ -81,8 +84,8 @@
 @media screen and (min-width: $tablet-breakpoint) {
   .section.team {
     background-color: #f5f4fa;
-    width: 768px;
-    height: 1399px;
+    width: 100vw;
+    height: auto;
     padding-top: 50px;
   }
   .section__title {
@@ -99,7 +102,7 @@
 
     &__pictures {
       width: 334px;
-      height: 347px;
+      height: 320px;
     }
     &__card {
       width: 334px;
@@ -160,8 +163,8 @@
 @media screen and (min-width: $desktop-breakpoint) {
   .section.team {
     background-color: #f5f4fa;
-    width: 1200px;
-    height: 708px;
+    width: 100vw;
+    height: auto;
     padding-top: 50px;
   }
 
@@ -180,7 +183,7 @@
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
-      margin-right: 3px;
+      justify-content: center;
       margin-bottom: 94px;
       width: 270px;
       height: 428px;

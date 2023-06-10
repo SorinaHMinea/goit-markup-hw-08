@@ -1,12 +1,13 @@
 .hero-section {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  background-image: url(/images/header-background-m.jpg);
+  background-image: url("/images/header-background-m.jpg");
   background-image: image-set(
-    url(/images/header-background-m.jpg) x1,
-    url(/images/header-background-m@2x.jpg) 2x
+    url("/images/header-background-m.jpg") x1,
+    url("/images/header-background-m@2x.jpg") 2x
   );
   display: flex;
-  width: 480px;
+  justify-content: center;
+  width: 100vw;
   height: 400px;
   &__btn {
     font-family: $text-font-family;
@@ -24,6 +25,7 @@
   &__title {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: white;
     font-size: 26px;
     line-height: 42px;
@@ -37,13 +39,16 @@
 @media screen and (min-width: $tablet-breakpoint) {
   .hero-section {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-    background-image: url(/images/header-background-t.jpg);
+    background-image: url("/images/header-background-t.jpg");
     background-image: image-set(
-      url(/images/header-background-t.jpg) x1,
-      url(/images/header-background-t@2x.jpg) 2x
+      url("/images/header-background-t.jpg") x1,
+      url("/images/header-background-t@2x.jpg") 2x
     );
-    width: 768px;
+    width: 100vw;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__btn {
       margin: 0 303px 128px 290px;
     }
@@ -61,11 +66,14 @@
 
 @media screen and (min-width: $desktop-breakpoint) {
   .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: var(--text-font-family);
     font-style: normal;
     color: $text-color;
     margin: 0;
-    width: 1200px;
+    width: 100vw;
     height: 600px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-image: url("/images/header-background-d.jpg");
@@ -97,6 +105,9 @@
       width: 200px;
       height: 50px;
       margin: 40px 500px 210px 502px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:hover {
         background-color: #1678c9;

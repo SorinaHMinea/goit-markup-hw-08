@@ -265,24 +265,28 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__divide">
-          <div>
-            <a class="footer__logo" href="index.html"
-              ><span class="logo-span">Web</span>Studio</a
-            >
-            <address class="footer__address">
-              695 Park Ave, NY 10065, USA <br />
-              <a class="footer__address--mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+        <div class="footer-flex">
+          <div class="footer__divide">
+            <div>
+              <a class="footer__logo" href="index.html"
+                ><span class="logo-span">Web</span>Studio</a
               >
-              <a class="footer__address--tel" href="tel:12127724150"
-                >+1 212-772-4150</a
-              >
-            </address>
+              <address class="footer__address">
+                695 Park Ave, NY 10065, USA <br />
+                <a
+                  class="footer__address--mail"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+                <a class="footer__address--tel" href="tel:12127724150"
+                  >+1 212-772-4150</a
+                >
+              </address>
+            </div>
           </div>
 
           <div class="left-footer">
-            <h5>Find us on</h5>
+            <h5 class="footer-title">Find us on</h5>
             <div class="footer__social-links">
               <a href="https://www.instagram.com" aria-label="Instagram">
                 <svg>
@@ -308,7 +312,7 @@
           </div>
           <div class="right-footer">
             <form class="form-footer">
-              <h5>Subscribe to the newsletter</h5>
+              <h5 class="form-text">Subscribe to the newsletter</h5>
               <div role="group" class="form-footer__group">
                 <input
                   class="form-footer__input"
@@ -317,11 +321,12 @@
                   type="E-mail"
                   placeholder="E-mail"
                 />
-                <svg class="form-footer__svg">
-                  <use href="./icons.svg#icon-icon-send"></use>
-                </svg>
+
                 <button class="button form-footer__btn" type="submit">
                   Subscribe
+                  <svg class="form-footer__svg">
+                    <use href="./icons.svg#icon-icon-send"></use>
+                  </svg>
                 </button>
               </div>
             </form>

@@ -5,8 +5,8 @@
 .customers {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
-  margin-left: 27px;
 
   .customers__svg {
     width: 210px;
@@ -27,10 +27,9 @@
   .customers {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     width: 768px;
-    padding-left: 15px;
-    margin-left: 0;
 
     .customers__svg {
       width: 226px;
@@ -49,12 +48,16 @@
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
+  .section-customers {
+    padding-top: 20px;
+  }
+
   .customers {
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
     height: 94px;
-    margin-left: 0px;
+    margin: auto;
 
     .section__title {
       margin-left: 200px;

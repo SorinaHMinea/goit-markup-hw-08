@@ -120,78 +120,81 @@
       <!--Advantages section-->
       <section class="section section-advantages">
         <div class="container">
-            <ul class="symbol-list__ul">
-              <div class="symbol-list__flex">
+            
+          <ul class="symbol-list__ul">
+              <div class="advantages__flex">
               <div class="symbol-list">
               <li class="symbol-list__symbol">
                 <svg  >
                   <use href="./symbol-defs.svg#icon-antenna-1"></use>
                 </svg>
               </li>
-              </div>         
+                <div class="advantages__item">
+                <h4 class="advantages__title">ATTENTION TO DETAILS</h4>
+                <p class="advantages__text">
+                  We go into all the details and processes of your business to
+                  develop a customized solution.
+                </p>
+                </div>
+              
+              </div>   
+            
+              
               <div class="symbol-list">
               <li class="symbol-list__symbol">
                 <svg>
                   <use href="./symbol-defs.svg#icon-clock-1"></use>
-                </svg>
+                </svg> 
               </li>
+                <div class="advantages__item">
+                <h4 class="advantages__title">PUNCTUALITY</h4>
+                <p class="advantages__text">
+                  With us, you can feel safe and secure. An important principle of
+                  the company: respect your time and deadlines.
+                </p>
+                </div>
+               
              </div>   
-              </div>   
-              <div class="symbol-list__flex">     
+            </div>
+                 <div class="advantages__flex">
               <div class="symbol-list">
               <li class="symbol-list__symbol">
                 <svg>
                   <use href="./symbol-defs.svg#icon-diagram-1"></use>
                 </svg>
               </li>
+                <div class="advantages__item">
+                <h4 class="advantages__title">PLANNING</h4>
+                <p class="advantages__text">
+                  You will be able to observe and participate in every phase of
+                  solution development and implementation.
+                </p>
+                </div>
+              
               </div>
+
               <div class="symbol-list">
               <li class="symbol-list__symbol">
                 <svg>
                   <use href="./symbol-defs.svg#icon-astronaut-1"></use>
                 </svg>
-             
               </li>
-             </div>
-             </div> 
-            </ul>
-          
-          <ul class="advantages">
-            <div class="advantages_flex">
-            <li class="advantages__item">
-              <h4 class="advantages__item--title">ATTENTION TO DETAILS</h4>
-              <p class="advantages__item--text">
-                We go into all the details and processes of your business to
-                develop a customized solution.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <h4 class="advantages__item--title">PUNCTUALITY</h4>
-              <p class="advantages__item--text">
-                With us, you can feel safe and secure. An important principle of
-                the company: respect your time and deadlines.
-              </p>
-            </li>
-          </div>
-          <div class="advantages_flex">
-            <li class="advantages__item">
-              <h4 class="advantages__item--title">PLANNING</h4>
-              <p class="advantages__item--text">
-                You will be able to observe and participate in every phase of
-                solution development and implementation.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <h4 class="advantages__item--title">MODERN TECHNOLOGIES</h4>
-              <p class="advantages__item--text">
+                <div class="advantages__item">
+                <h4 class="advantages__title">MODERN TECHNOLOGIES</h4>
+              <p class="advantages__text">
                 We use innovative tools to solve assigned tasks. It's time to
                 simplify work processes.
               </p>
-            </li>
-          </div>
-          </ul>
+              </div>
+              
+             </div>
+            </div> 
+            </ul> 
+          </div> 
+            
+
           <!--WORK-->
-          <div class="section work__section">
+          <div class=" work__section">
           <h2 class=" section__title work-title">What we do</h2>
           <ul class="work">
             <div class="work__box" >
@@ -463,10 +466,13 @@
         </div>
       </section>
     </main>
+
+    <!--FOOTER-->
     <footer class="footer">
       <div class="container">
+        <div class="footer-flex">
         <div class="footer__divide">
-        <div>
+        <div >
         <a class="footer__logo" href="index.html"><span class="logo-span">Web</span>Studio</a>
         <address class="footer__address">
           695 Park Ave, NY 10065, USA <br />
@@ -475,52 +481,54 @@
           >
           <a class="footer__address--tel" href="tel:12127724150">+1 212-772-4150</a>
         </address>
-      </div>
+        </div>
         </div>
       
-      <div class="left-footer">
+       <div class="left-footer">
         <h5 class="footer-title">Find us on</h5>
         <div class="footer__social-links">
           <a href="https://www.instagram.com"
-          aria-label="Instagram">
+            aria-label="Instagram">
             <svg >
                 <use href="./symbol-defs.svg#icon-instagram-2"></use>
             </svg>
-          </a>
-        <a href="https://www.twitter.com"
-        aria-label="Twitter">
+            </a>
+            <a href="https://www.twitter.com"
+             aria-label="Twitter">
             <svg>
                 <use href="./symbol-defs.svg#icon-twitter-1"></use>
             </svg>
           </a>
-        <a href="https://www.facebook.com"
-        aria-label="Facebook">
+            <a href="https://www.facebook.com"
+           aria-label="Facebook">
             <svg>
                 <use href="./symbol-defs.svg#icon-facebook-1"></use>
             </svg>
           </a>
-        <a href="https://www.linkedin.com"
-        aria-label="LinkedIn">
+            <a href="https://www.linkedin.com"
+             aria-label="LinkedIn">
             <svg>
                 <use href="./symbol-defs.svg#icon-linkedin-1"></use>
             </svg>
-          </a>
-             </div>
+             </a>
+         </div>
        </div>        
         <div class="right-footer">
        <form class="form-footer">
         <h5 class="form-text">Subscribe to the newsletter</h5>
         <div role="group" class="form-footer__group">
             <input class="form-footer__input" id="E-mail" name="E-mail" type="E-mail" placeholder="E-mail" /> 
+                
+          <button class="button form-footer__btn" type="submit" >Subscribe  
             <svg class="form-footer__svg">
               <use href="./icons.svg#icon-icon-send"></use>
-          </svg>        
-          <button class="button form-footer__btn" type="submit" >Subscribe</button>   
+          </svg>   
+          </button>   
                   
        </div>
         </form>
        </div>    
-  
+        </div>
       </div>
     </footer>
     <!--MODAL-->
